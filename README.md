@@ -4,6 +4,8 @@
 
 And load it at the beginning of your APP.
 
+`import 'react-dom-log`
+
 Recommended for DEV only.
 
 Adds a (hopefully) unique prefix `[DOMLOG]` to full stack messages.

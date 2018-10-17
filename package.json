@@ -1,7 +1,7 @@
 {
   "name": "react-dom-log",
   "description": "An enhancer for react-dom logs splitting error in msg and trace and showing warnings as actual warnings",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {

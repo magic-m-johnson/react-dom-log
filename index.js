@@ -11,7 +11,11 @@ if (console && console.error) {
             }
 
             let first = full.indexOf('.') >= 0 ? full.split('.')[0] + '.' : full
-            const type = first.indexOf('Warning') === 0 ? 'warn' : '_error'
+            const type = first.indexOf('Warning: ') === 0 ? 'warn' : '_error'
+
+            if (type === 'warn') {
+                first = first.substr(9)
+            }
 
             console[type](first)
             console._error('[DOMLOG] ' + full, {

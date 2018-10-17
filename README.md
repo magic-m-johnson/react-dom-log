@@ -4,7 +4,7 @@
 
 And load it at the beginning of your APP.
 
-`import 'react-dom-log`
+`import 'react-dom-log'`
 
 Recommended for DEV only.
 

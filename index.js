@@ -1,6 +1,6 @@
 if (console && console.error) {
     console._error = console.error
-    console.__error = (...args) => {
+    console.error = (...args) => {
         if (args.length > 1 && args[0].substr(-2) === '%s') {
             let full = args.shift()
             full = full.substr(0, full.length - 2).replace(/ *\n+ */, ' ')

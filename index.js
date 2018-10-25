@@ -10,7 +10,7 @@ if (console && console.error) {
                 full = full.replace(/%s/, args.shift())
             }
 
-            let first = full.indexOf('.') >= 0 ? full.split('.')[0] + '.' : full
+            let first = full.indexOf('. ') >= 0 ? full.split('. ')[0] + '.' : full
             const type = first.indexOf('Warning: ') === 0 ? 'warn' : '_error'
 
             if (type === 'warn') {
